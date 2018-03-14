@@ -1,0 +1,66 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "low",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "high",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "RandomNumberIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "FirstNumber",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "SecondNumber",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "operation",
+          "type": "custom_operation"
+        }
+      ],
+      "intent": "DoArithmeticIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "number",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "AnswerIntent"
+    }
+  ]
+}
+
+
+
+
+
+custom_operation:
+
+add
+multiply
+
+
+
+
+RandomNumberIntent give me a random number
+RandomNumberIntent random number
+RandomNumberIntent for a random number
+RandomNumberIntent give me a random number between {low} and {high}
+DoArithmeticIntent {operation} {FirstNumber} and {SecondNumber}
+DoArithmeticIntent {operation} {FirstNumber} and {SecondNumber}
+AnswerIntent {number}
